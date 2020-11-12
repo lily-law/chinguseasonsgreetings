@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Present from './components/Present'
+import SnowStorm from 'react-snowstorm'
+import './App.css'
 
 function App() {
-  return (
-    <div className="App">
+  return (<>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <SnowStorm />
+        <Present />
       </header>
-    </div>
-  );
+      <main className="App-main">
+        <h1>Seasons Greetings</h1>
+      </main>
+      <footer className="App-footer">
+
+      </footer>
+    </>)
 }
 
 export default App;
